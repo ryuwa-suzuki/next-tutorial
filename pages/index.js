@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,6 +12,12 @@ export default function Home() {
       </Head>
 
       <main>
+        <Image
+          src="/images/profile.jpg" // Route of the image file
+          height={144} // Desired size with correct aspect ratio
+          width={144} // Desired size with correct aspect ratio
+          alt="Ryuwa"
+        />
         <h1 className={styles.title}>
           Read <Link href="/posts/first-post">this page!</Link>
         </h1>
